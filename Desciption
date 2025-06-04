@@ -1,0 +1,83 @@
+🖐️ Gesture-Controlled Presentation Tool with Hand Tracking
+This project is an AI-powered, touchless presentation controller using computer vision and hand gesture recognition. It allows users to navigate and annotate PowerPoint slides in real time using predefined finger gestures. The system uses OpenCV and MediaPipe-based hand tracking (via HandDetector) to interpret gestures like slide navigation, drawing, pointer control, and color selection.
+
+🎯 Features
+👆 Navigate slides using finger gestures (next, previous)
+
+✍️ Draw annotations on slides using your index finger
+
+🎨 Change annotation color with intuitive finger combinations
+
+🧼 Erase or clear annotations with gestures
+
+📸 Live webcam feed embedded alongside the presentation
+
+📂 Works with .pptx files using python-pptx
+
+📦 Technologies Used
+Python 3.x
+
+OpenCV (cv2)
+
+NumPy
+
+python-pptx (for loading and displaying slides)
+
+Custom HandDetector module (based on MediaPipe)
+
+⚙️ Installation
+bash
+Copy
+Edit
+pip install opencv-python numpy python-pptx
+# Make sure you also have the HandDetector module from the source
+🚀 How to Run
+Replace the presentation_file path with your .pptx file.
+
+Ensure your camera is connected.
+
+Run the script:
+
+bash
+Copy
+Edit
+python gesture_presentation.py
+Use gestures:
+
+Thumb up → Previous slide
+
+Pinky up → Next slide
+
+All fingers up → Clear annotations
+
+Index + Middle → Show pointer
+
+Index only → Draw
+
+Index + Middle + Ring → Erase
+
+Index + Middle + Ring + Pinky → Activate color selection mode
+
+Then:
+
+Thumb only → Red
+
+Index only → Green
+
+Middle only → Blue
+
+📚 Educational Use
+This project demonstrates:
+
+Real-time gesture recognition
+
+Hands-free UI design
+
+Integration of computer vision with interactive media
+
+A practical application of human-computer interaction (HCI) techniques
+
+⚠️ Notes
+Ensure consistent lighting and a visible hand region for best results.
+
+Requires the HandDetector.py module, typically implemented using MediaPipe or OpenCV landmarks.
